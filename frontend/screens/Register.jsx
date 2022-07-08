@@ -35,7 +35,7 @@ export default function Register() {
             value={firstName}
             onChangeText={(name) => setFirstName(name)}
             Icon={<Feather name="user" size={24} color="silver" />}
-            placeholder={'First name'}
+            placeholder={'Names'}
           />
         </View>
         <View style={styles.inputContainer}>
