@@ -25,7 +25,6 @@ export default function Register() {
             source={require('../assets/img/logo.png')}
             style={styles.image}
           />
-          <Text style={styles.logoText}>MiVote</Text>
         </View>
         <View style={styles.header}>
           <Text style={styles.title}>Create an account</Text>

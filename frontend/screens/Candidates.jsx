@@ -5,34 +5,40 @@ import ListItem from '../components/ListItem';
 export default function Candidates() {
   const candidates = [
     {
-      title: 'John Doe',
+      title: 'Kalisa Ivan',
       image: require('../assets/img/person1.png'),
       description: 'Marketing director',
+      votes: '12 votes',
     },
     {
-      title: 'Jane Doe',
+      title: 'Yvette Runi',
       image: require('../assets/img/person2.jpg'),
       description: 'Chief of Finance',
+      votes: '10 vites',
     },
     {
-      title: 'John Doe',
+      title: 'Kabera James',
       image: require('../assets/img/person1.png'),
       description: 'Marketing director',
+      votes: '12 votes',
     },
     {
-      title: 'Jane Doe',
+      title: 'Murenzi Tracy',
       image: require('../assets/img/person2.jpg'),
       description: 'Vice-Chief of Finance Department',
+      votes: '30 votes', 
     },
     {
-      title: 'John Doe',
+      title: 'Egide Gaspard',
       image: require('../assets/img/person1.png'),
       description: 'Marketing director at Vote',
+      votes: '12 votes',
     },
     {
-      title: 'Jane Doe',
+      title: 'Karemera Nice',
       image: require('../assets/img/person2.jpg'),
       description: 'Vice-Chief of Finance Department',
+      votes: '40 votes',
     },
   ];
 
@@ -45,4 +51,5 @@ export default function Candidates() {
       <FlatList data={candidates} renderItem={renderItem} />
     </SafeAreaView>
   );
+
 }

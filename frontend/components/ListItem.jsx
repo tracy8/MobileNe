@@ -8,6 +8,7 @@ export default function ListItem({ items }) {
       <View>
         <Text style={styles.title}>{items.title}</Text>
         <Text style={styles.description}>{items.description}</Text>
+        <Text style={styles.votes}>{items.votes}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -34,4 +35,9 @@ const styles = StyleSheet.create({
     color: '#827F7F',
     paddingHorizontal: 16,
   },
+  votes: {
+    fontSize: 14,
+    color: '#827F7F',
+    paddingHorizontal: 16,
+  }
 });

@@ -52,7 +52,7 @@ export default function Login() {
         </View>
         <View style={styles.header}>
           <Text style={styles.title}>
-            Hi, Welcome Back! <Emoji name="wave" style={{ fontSize: 18 }} />
+            Welcome Back! <Emoji name="wave" style={{ fontSize: 18 }} />
           </Text>
           <Text style={styles.innerTitle}>
             Hello again, you've been missed!
@@ -76,7 +76,7 @@ export default function Login() {
           />
         </View>
         <View style={styles.buttonContainer}>
-          <Button title={'Sign in'} onPress={submitForm} />
+          <Button title={'Sign in'} onPress={() => navigate('Candidates')} />
         </View>
       </View>
       <View style={styles.footer}>

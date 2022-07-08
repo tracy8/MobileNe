@@ -37,6 +37,11 @@ export default function RootNavigator() {
         component={BottomTabNavigator}
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="Candidates"
+        component={Candidates}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 }
