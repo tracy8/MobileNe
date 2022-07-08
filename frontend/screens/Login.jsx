@@ -76,7 +76,7 @@ export default function Login() {
           />
         </View>
         <View style={styles.buttonContainer}>
-          <Button title={'Sign in'} onPress={() => navigate('Candidates')} />
+          <Button title={'Sign in'} onPress={() => navigate('Welcome')} />
         </View>
       </View>
       <View style={styles.footer}>

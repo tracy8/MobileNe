@@ -5,6 +5,7 @@ import Login from '../screens/Login';
 import Splash from '../screens/Splash';
 import Welcome from '../screens/Welcome';
 import Candidates from '../screens/Candidates';
+import Polls from '../screens/Polls';
 import BottomTabNavigator from './BottomTabNavigator';
 
 export default function RootNavigator() {
@@ -40,6 +41,11 @@ export default function RootNavigator() {
       <Stack.Screen
         name="Candidates"
         component={Candidates}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Polls"
+        component={Polls}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

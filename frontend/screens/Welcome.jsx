@@ -24,7 +24,7 @@ export default function Welcome() {
         style={styles.image}
       />
       <View style={styles.action}>
-        <Button title={'Get Started'} onPress={() => navigate('Login')} />
+        <Button title={'View Candidates'} onPress={() => navigate('Candidates')} />
       </View>
     </SafeAreaView>
   );
