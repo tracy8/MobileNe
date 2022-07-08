@@ -31,7 +31,7 @@ export default function ListPoll({ items }) {
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Thank you</Text>
+              <Text style={styles.textStyle}>Thank you!</Text>
             </Pressable>
           </View>
         </View>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop:120,
+    marginTop:50,
     padding: 16,
   },
   image: {

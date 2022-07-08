@@ -7,9 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function Register() {
   const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const  [nationalID, setNationalID] = useState('');
   const [phone, setPhone] = useState('');
   const { navigate } = useNavigation();
 
@@ -33,40 +33,35 @@ export default function Register() {
         <View style={styles.inputContainer}>
           <Input
             value={firstName}
-            onChangeText={(firstname) => setFirstName(firstname)}
+            onChangeText={(name) => setFirstName(name)}
             Icon={<Feather name="user" size={24} color="silver" />}
             placeholder={'First name'}
           />
         </View>
         <View style={styles.inputContainer}>
           <Input
-            value={lastName}
-            onChangeText={(lastname) => setLastName(lastname)}
+            value={email}
+            onChangeText={(email) => setEmail(email)}
             Icon={<Feather name="user" size={24} color="silver" />}
-            placeholder={'Last name'}
+            placeholder={'Email'}
           />
         </View>
+        <View style={styles.inputContainer}>
+          <Input
+            value={nationalID}
+            onChangeText={(nationalID) => setNationalID(nationalID)}
+            Icon={<Feather name="user" size={24} color="silver" />}
+            placeholder={'National ID'}
+          />
+        </View>
+    
         <View style={styles.inputContainer}>
           <Input
             value={phone}
             onChangeText={(phone) => setPhone(phone)}
             Icon={<Feather name="user" size={24} color="silver" />}
-            placeholder={'Phone number'}
+            placeholder={'Phone Number'}
           />
-        </View>
-        <View style={styles.inputContainer}>
-          {/* <DatePicker
-            modal
-            mode="date"
-            open={open}
-            date={dob}
-            onConfirm={(date) => {
-              setOpen(false);
-              setDob(date);
-            }}
-            onDateChange={setDob}
-            onCancel={() => setOpen(false)}
-          /> */}
         </View>
         <View style={styles.inputContainer}>
           <Input
@@ -74,17 +69,6 @@ export default function Register() {
             onChangeText={(password) => setPassword(password)}
             Icon={<Feather name="lock" size={24} color="silver" />}
             placeholder={'Password'}
-            secureTextEntry
-          />
-        </View>
-        <View style={styles.inputContainer}>
-          <Input
-            value={confirmPassword}
-            onChangeText={(confirmPassword) =>
-              setConfirmPassword(confirmPassword)
-            }
-            Icon={<Feather name="lock" size={24} color="silver" />}
-            placeholder={'Confirm Password'}
             secureTextEntry
           />
         </View>
